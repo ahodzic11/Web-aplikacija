@@ -1,0 +1,89 @@
+@objects
+	body body
+	meni #meni
+	urlRepozitorija #urlRepozitorija
+	akademskaGodina #akademskaGodina
+	imenovanjeBrancheva #imenovanjeBrancheva
+	form-box #form-box
+	vjezbelnk #vjezbelnk
+	grupelnk #grupelnk
+	button-primary #button-primary
+	labelaUrl #labelaUrl
+	labelaGodina #labelaGodina
+	labelaImenovanje #labelaImenovanje
+
+= Width section =
+	meni:
+		width 98 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+	urlRepozitorija:
+		inside form-box
+	akademskaGodina:
+		inside form-box
+	imenovanjeBrancheva:
+		inside form-box
+= Left of section =
+	grupelnk:
+		left-of vjezbelnk
+
+= Right of section =
+	vjezbelnk:
+		right-of grupelnk
+
+= Above section =
+	urlRepozitorija:
+		above akademskaGodina
+	urlRepozitorija:
+		above imenovanjeBrancheva
+	akademskaGodina:
+		above imenovanjeBrancheva
+	urlRepozitorija:
+		above button-primary
+	akademskaGodina:
+		above button-primary
+	imenovanjeBrancheva:
+		above button-primary
+
+= Below section =
+	urlRepozitorija:
+		below grupelnk
+	urlRepozitorija:
+		below vjezbelnk
+	akademskaGodina:
+		below grupelnk
+	akademskaGodina:
+		below vjezbelnk
+	imenovanjeBrancheva:
+		below grupelnk
+	imenovanjeBrancheva:
+		below vjezbelnk
+	akademskaGodina:
+		below urlRepozitorija
+	imenovanjeBrancheva:
+		below urlRepozitorija
+	imenovanjeBrancheva:
+		below akademskaGodina
+
+= Visible section =
+	meni:
+		visible
+	urlRepozitorija:
+		visible
+	akademskaGodina:
+		visible
+	imenovanjeBrancheva:
+		visible
+	button-primary:
+		visible
+	labelaUrl:
+		visible
+	labelaGodina:
+		visible
+	labelaImenovanje:
+		visible
+= Inside partly section =
+	meni:
+		inside partly body ~0px left, ~0px top

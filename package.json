@@ -1,0 +1,22 @@
+{
+  "name": "spirala3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha public/js/testovis4.js --timeout 5000 || true"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.14.1"
+  },
+  "description": "",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.0"
+  }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Zadaci</title>
+    <link rel="stylesheet" href="../css/zadaci.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="meni">
+        <ul>
+            <li id="grupelnk">
+                <a href="../html/z1.html" >Grupe</a>
+            </li>
+            <li id="vjezbelnk">
+                <a href="../html/vjezbe.html" >Vježbe</a>
+            </li>
+        </ul>
+    </div>
+    <div id="forma1" class="form-box">
+        <h1>Zadaci</h1>
+        <form>
+            <label for="odabirVjezbe" id="labelaOdabir">Odabir vježbe</label>
+            <br>
+            <select name="odabirVjezbe" id="odabirVjezbeLista">
+                <option value="vjezba1">Vježba 1</option>
+                <option value="vjezba2">Vježba 2</option>
+                <option value="vjezba3">Vježba 3</option>
+                <option value="vjezba4">Vježba 4</option>
+                <option value="vjezba5">Vježba 5</option>
+                <option value="vjezba6">Vježba 6</option>
+            </select>
+            <br>
+            <label for="odabirZadatka" id="labelaZadatak">Odabir zadatka</label>
+            <br>
+            <select name="odabirZadatka" id="odabirZadatkaLista">
+                <option value="zadatak1">Zadatak 1</option>
+                <option value="zadatak2">Zadatak 2</option>
+                <option value="zadatak3">Zadatak 3</option>
+                <option value="zadatak4">Zadatak 4</option>
+            </select>
+            <br>
+          
+            <label for="odabirVerzije" id="labelaVerzija">Odabir verzije</label>
+            <br>
+            <select name="odabirVerzije" id="odabirVerzijeLista">
+                <option value="verzija1">Verzija 1</option>
+                <option value="verzija2">Verzija 1.1</option>
+                <option value="verzija3">Verzija 1.2</option>
+                <option value="verzija4">Verzija 1.3</option>
+            </select>
+            <br>
+
+            <label for="komentar" id="labelaKomentar">Komentar:</label>
+            <br>
+            <textarea name="komentar" id="komentarArea" cols="50" rows="5"></textarea>
+
+            <input id="posaljiBtn" class="button-primary" type="submit" value="Pošalji" />
+        </form>
+    </div>
+
+    <div id="forma2" class="form-box">
+        <form>
+
+            <label for="errorsLog" id="labelaError">Errors log</label>
+            <br>
+            <textarea name="errorsLog" id="errorsLog" cols="50" rows="5"></textarea>
+
+            <label for="errorsLog" id="labelaGreska">Bez grešaka</label>
+            <input type="checkbox" id="cbGreska" name="errorsLog">
+            <input id="dodajRezultateBtn" class="button-primary" type="submit" value="Dodaj rezultate testa" />
+        </form>
+    </div>
+</body>
+
+</html>

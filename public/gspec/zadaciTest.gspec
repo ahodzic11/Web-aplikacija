@@ -1,0 +1,164 @@
+@objects
+	body body
+	meni #meni
+	form-box .form-box
+	grupelnk #grupelnk	
+	vjezbelnk #vjezbelnk
+	labelaOdabir #labelaOdabir
+	odabirVjezbeLista #odabirVjezbeLista
+	labelaZadatak #labelaZadatak
+	odabirZadatkaLista #odabirZadatkaLista
+	labelaVerzija #labelaVerzija
+	odabirVerzijeLista #odabirVerzijeLista
+	labelaKomentar #labelaKomentar	
+	komentarArea #komentarArea
+	posaljiBtn #posaljiBtn
+	labelaError #labelaError
+	errorsLog #errorsLog
+	labelaGreska #labelaGreska
+	cbGreska #cbGreska
+	dodajRezultateBtn #dodajRezultateBtn
+	forma1 #forma1
+	forma2 #forma2
+= Width section =
+	meni:
+		width 98 to 100 % of body/width
+
+= Height section =
+
+= Inside section =
+	grupelnk:
+		inside meni
+	vjezbelnk:
+		inside meni
+	labelaOdabir:
+		inside forma1
+	odabirVjezbeLista:
+		inside forma1
+	labelaZadatak:
+		inside forma1
+	labelaOdabir:
+		inside forma1
+	odabirZadatkaLista:
+		inside forma1
+	labelaVerzija:
+		inside forma1
+	odabirVerzijeLista:
+		inside forma1
+	labelaKomentar:
+		inside forma1
+	komentarArea:
+		inside forma1
+	posaljiBtn:
+		inside forma1
+	labelaError:
+		inside forma2
+	errorsLog:
+		inside forma2
+	labelaGreska:
+		inside forma2
+	cbGreska:
+		inside forma2
+	dodajRezultateBtn:
+		inside forma2
+= Left of section =
+	grupelnk:
+		left-of vjezbelnk
+
+= Right of section =
+	vjezbelnk:
+		right-of grupelnk
+
+= Above section =
+	meni:
+		above form-box
+	forma1:
+		above forma2
+	labelaOdabir:
+		above odabirVjezbeLista
+	odabirVjezbeLista:
+		above labelaZadatak
+	labelaZadatak:
+		above odabirZadatkaLista
+	odabirZadatkaLista:
+		above labelaVerzija
+	labelaVerzija:
+		above odabirVerzijeLista
+	odabirVerzijeLista:
+		above labelaKomentar
+	labelaKomentar:
+		above komentarArea
+	komentarArea:
+		above posaljiBtn
+	
+	labelaError:
+		above errorsLog
+	errorsLog:
+		above labelaGreska
+	labelaGreska:
+		above cbGreska
+	cbGreska:
+		above dodajRezultateBtn
+= Below section =
+	dodajRezultateBtn:
+		below cbGreska
+	cbGreska:
+		below labelaGreska
+	labelaGreska:
+		below errorsLog
+	errorsLog:
+		below labelaError
+	labelaError:
+		below posaljiBtn
+	posaljiBtn:
+		below komentarArea
+	komentarArea:
+		below labelaKomentar
+	labelaKomentar:
+		below odabirVerzijeLista
+	odabirVerzijeLista:
+		below labelaVerzija
+	odabirZadatkaLista:
+		below labelaZadatak
+	labelaZadatak:
+		below odabirVjezbeLista
+	odabirVjezbeLista:
+		below labelaOdabir
+= Visible section =
+	meni:
+		visible
+	labelaOdabir:
+		visible
+	odabirVjezbeLista:
+		visible
+	labelaZadatak:
+		visible
+	odabirZadatkaLista:
+		visible
+	labelaVerzija:
+		visible
+	odabirVerzijeLista:
+		visible
+	labelaKomentar:
+		visible
+	komentarArea:
+		visible
+	posaljiBtn:
+		visible
+	forma1:
+		visible
+	forma2:
+		visible
+	labelaGreska:
+		visible
+	errorsLog:
+		visible
+	labelaError:
+		visible
+	cbGreska:
+		visible
+	dodajRezultateBtn:
+		visible
+= Inside partly section =
+	meni:
+		inside partly body ~0px left, ~0px top

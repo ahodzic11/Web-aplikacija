@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: fit-content;
+    min-height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px, 1fr, 1fr;
+    grid-template-areas: 
+    "meni"
+    "vjezbe"
+    "grafovi"
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+#meni{
+    height: 100px;
+    background: #93C6D6;
+    grid-area: meni;
+}
+
+a{
+    color: white;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    display: inline;
+    list-style-type: none;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+#odabirVjezbe{
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    background-color: #95B9D4;
+}
+
+#vjezbe{
+    padding: 1% 1% 0% 1%;
+    background: #96BAD5;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+    height: fit-content;
+    grid-area: vjezbe;
+}
+
+.vjezba1{
+    margin: 0% 0% 0% 0%;
+}
+
+.vjezba{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    border: 0.1em solid;
+    margin: 1% 1% 0% 1%;
+    background: #E1E2EC;
+}
+
+.probni{
+    height: 43px;
+}
+
+.zadaci{
+    display: flex;
+    height: fit-content;
+    background: #4377A3;
+    text-align: left;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    margin: 0% 1% 1% 1%;
+}
+
+.zadatak{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    background: #95B9D4;
+    padding: 1.5%;
+    margin: 1%;
+}
+
+.zadatak.p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vjezba1{
+    margin: 0 0 0 0;
+}
+
+.graf{
+    width: 50%;
+    background: #8CAAFD;
+    padding: 1%;
+    text-transform: uppercase;
+    height: fit-content;
+}
+
+.slika img{
+    width: 100%;
+}
+
+.brojCommita{
+    color: #404C81;
+    text-align: center;
+    background: #BCDCFF;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.grafovi{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    width: 100%;
+    background-color: #8CAAFD;
+}
+
+@media screen and (min-width: 800px){
+    .container{
+        grid-template-columns: 0.3fr 0.7fr;
+        grid-template-rows: 100px auto;
+        grid-template-areas: 
+        "meni meni"
+        "vjezbe grafovi";
+        min-height: fit-content;
+    }
+
+    #grafovi{
+        grid-area: grafovi;
+    }
+
+
+    *{
+        box-sizing: border-box;
+    }
+}
